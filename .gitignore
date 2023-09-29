@@ -1,0 +1,10 @@
+cmake-build-debug
+CMakeLists.txt
+.idea
+!*.cpp
+/Array&Strings/URLlify
+/Array&Strings/uniqueChar
+/Leet/Easy/two_sums
+/Leet/Easy/isPalindrome
+/Array&Strings/checkPermutuation
+/Leet/Easy/array_permutuation
