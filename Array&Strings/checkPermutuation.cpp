@@ -23,15 +23,17 @@ bool isPermutuationAscii(string s, string t) {
     for (char x: s) {
         ascii[(int) x]++;
     }
-    for (int i = 0; i < t.length(); ++i) {
-        ascii[(int) t[i]]--;
-        if (ascii[(int) t[i]] > 0) return false;
+    for (char i : t) {
+        ascii[(int) i]--;
+    }
+    for (char i : t) {
+        if (ascii[(int) i] > 0) return false;
     }
     return true;
 }
 
 int main() {
-    cout << isPermutuation("12403", "24510") << endl;
-    cout << isPermutuationAscii("hoela", "alohe");
+    cout << isPermutuation("god", "dog") << endl;
+    cout << isPermutuationAscii("abbaa", "babab");
     return 0;
 }
